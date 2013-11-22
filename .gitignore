@@ -1,0 +1,6 @@
+packages
+pubspec.lock
+.DS_Store
+*.js
+*.js.deps
+*.js.map
