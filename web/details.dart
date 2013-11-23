@@ -15,6 +15,7 @@ class Game {
   
   Game(this.canvas, this.entities) {
     stage = new Stage('myStage', canvas);
+    canvas.focus();
     renderLoop = new RenderLoop();
     renderLoop.addStage(stage);
     entities.forEach((entity) => stage.addChild(entity));
