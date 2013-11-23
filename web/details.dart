@@ -44,7 +44,7 @@ class Game {
 
 
 abstract class Entity extends DisplayObjectContainer {
-  int SPEED = 10;
+  int get speed;
 
   Entity(String imgPath) {
     var completer = new Completer<bool>();
@@ -73,21 +73,21 @@ abstract class Entity extends DisplayObjectContainer {
   Bitmap _bitmap;
   
   moveLeft() {
-    x -= SPEED;
+    x -= speed;
     scaleX = -1.0;
   }
   
   moveRight() {
-    x += SPEED;
+    x += speed;
     scaleX = 1.0;
   }
   
   moveUp() {
-    y -= SPEED;
+    y -= speed;
   }
   
   moveDown() {
-    y += SPEED;
+    y += speed;
   }
 }
 
@@ -114,8 +114,8 @@ class KeyboardInput {
   }
 }
 
-class ZombieBrain {
-  DisplayObject target;
+abstract class ZombieBrain {
+  DisplayObject get target;
   
   followTargetListener(EnterFrameEvent e) {
     assert(this is Entity);
