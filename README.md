@@ -1,6 +1,6 @@
 # Zombie! In Dart!
 
-This demo 'game' that was implemented during my [GDG DevFest Prague 2013](http://www.devfest.cz/ "DevFest Praha 2013")
+This demo 'game' was implemented during my [GDG DevFest Prague 2013](http://www.devfest.cz/ "DevFest Praha 2013")
 talk titled **Dart v1.0**.
 
 None of this should be considered best practice or even good code, of course. This
